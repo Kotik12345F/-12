@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: url("6.jpg") no-repeat;
+}
+.container {
+  margin-top:50px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+nav {
+    margin: 27px auto 0;
+  
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #5030dc;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 100px;
+  }
+  a:nth-child(2) {
+    width: 110px;
+  }
+  a:nth-child(3) {
+    width: 100px;
+  }
+  a:nth-child(4) {
+    width: 160px;
+  }
+  a:nth-child(5) {
+    width: 120px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #260747;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #542ec5;
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #b7c5ff;
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #bcbcc2;
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #604570;
+  }
+
+
+
+
+  
+
+.container .login-box {
+  position: relative;
+  width: 390px;
+  height: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+
+.login-box h2 {
+  font-size: 28px;
+  color: #a0faff;
+  text-align: center;
+}
+
+.login-box .input-box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #310f7a;
+  padding: 0 35px 0 5px;
+}
+
+.input-box input::placeholder {
+  color: #190946;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.login-box .remember-forget {
+  margin: -15px 0 15px;
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forget label input {
+  margin-right: 3px;
+}
+
+.login-box button {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.login-box button:hover {
+  background: #140745;
+  color: #fff;
+}
+
+.login-box .register-link {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.remember-forget a,
+.register-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forget a:hover,
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 460px) {
+  .container .login-box {
+    width: 350px;
+  }
+
+  .login-box .input-box {
+    width: 290px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container .login-box {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+}

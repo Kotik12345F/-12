@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Your Own Chatbot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="zakaz.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+  
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="regist.html">Логин</a>
+    <a href="ohas.html">О нас</a>
+    <a href="#">Заказ</a>
+    <a href="admin.html">Админ</a>
+    <div class="animation start-home"></div>
+  </nav>
+
+
+</head>
+  <body>
+<body>
+  <div class="card">
+    <div id="header">
+      <h1>Мой заказ!</h1>
+    </div>
+    <div id="message-section">
+      <div class="message" id="bot"><span id="bot-response">Здраствуйте, чего желаете?</span></div>
+    </div>
+    <div id="input-section">
+      <input id="input" type="text" placeholder="Я хочу..." autocomplete="off" autofocus="autofocus"/>
+      <button class="send" onclick="sendMessage()">
+        <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+      </button>
+    </div>
+  </div>
+  <script src="zakaz.js"></script>
+</body>
+</html>
